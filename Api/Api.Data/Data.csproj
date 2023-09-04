@@ -11,6 +11,7 @@
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
   </ItemGroup>
 
+  <!-- Corrija o caminho para o projeto Api.Domain -->
   <ItemGroup>
     <ProjectReference Include="..\Api.Domain\Domain.csproj" />
   </ItemGroup>

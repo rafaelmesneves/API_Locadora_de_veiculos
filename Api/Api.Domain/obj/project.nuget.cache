@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "sDcfwXONqZVsfOEu1oBLZmTqvTBh1ugH5ulcl7pJj3FokrabUBdcoZbNbQ1/VKzFnlDYOmkhsOj5pDworWT+ZQ==",
+  "dgSpecHash": "lN3cEQ8vWGHMNl6383rOM+276BTwognC3aBnBOHScfX5R+noKRl9VE/kkgPBnODLbSmcSAQzMgNRA1TFA7ExqA==",
   "success": true,
   "projectFilePath": "C:\\Users\\rafae\\programacao\\LocadoraApi\\Api\\Api.Domain\\Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\rafae\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.10\\microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
-    "C:\\Users\\rafae\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.10\\microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",
-    "C:\\Users\\rafae\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.10\\microsoft.entityframeworkcore.analyzers.7.0.10.nupkg.sha512",
+    "C:\\Users\\rafae\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
+    "C:\\Users\\rafae\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
+    "C:\\Users\\rafae\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.5\\microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",

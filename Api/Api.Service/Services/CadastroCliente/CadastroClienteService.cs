@@ -1,37 +1,44 @@
 using Api.Domain.Entities;
-using Api.Domain.Interfaces.Services.CadastroCliente;
+using Api.Domain.Interfaces.Services;
+using Api.Domain.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Api.Service.Services.CadastroCliente
+namespace Api.Service.Services
 {
     public class CadastroClienteService : ICadastroClienteService
     {
-        // Implementação dos métodos da interface ICadastroClienteService
+        private readonly IRepository<CadastroClienteEntity> _repository;
+
+        public CadastroClienteService(IRepository<CadastroClienteEntity> repository)
+        {
+            _repository = repository;
+        }
+
         public async Task<CadastroClienteEntity> Get(Guid id)
         {
-            // Implementação do método Get usando CadastroClienteEntity
+
         }
 
         public async Task<IEnumerable<CadastroClienteEntity>> GetAll()
         {
-            // Implementação do método GetAll usando CadastroClienteEntity
+
         }
 
         public async Task<CadastroClienteEntity> Post(CadastroClienteEntity cliente)
         {
-            // Implementação do método Post usando CadastroClienteEntity
+
         }
 
         public async Task<CadastroClienteEntity> Put(CadastroClienteEntity cliente)
         {
-            // Implementação do método Put usando CadastroClienteEntity
+
         }
 
         public async Task<bool> Delete(Guid id)
         {
-            // Implementação do método Delete
+
         }
     }
 }

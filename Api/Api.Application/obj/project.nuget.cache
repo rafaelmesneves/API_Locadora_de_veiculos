@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UUbVcnvdftWA5A9SZvCHSLxc17HGB3TvmrbTOW2yQmeOMXkmwmpHwq+0z6OEIuKgr5PXul6/GVURj01ercC8vQ==",
+  "dgSpecHash": "BUjHB4Bz34aKfsgD5TeB6xm4w0BFRFvKj3U7ugCRmwCK0JJ0ceY6jDs82PKnh/Ib2pbq7LMw2974LcS8ST6xag==",
   "success": true,
   "projectFilePath": "C:\\Users\\rafae\\programacao\\LocadoraApi\\Api\\Api.Application\\Application.csproj",
   "expectedPackageFiles": [
@@ -29,9 +29,9 @@
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.0.0\\microsoft.aspnetcore.webutilities.2.0.0.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\2.0.0\\microsoft.dotnet.platformabstractions.2.0.0.nupkg.sha512",
-    "C:\\Users\\rafae\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.10\\microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
-    "C:\\Users\\rafae\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.10\\microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",
-    "C:\\Users\\rafae\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.10\\microsoft.entityframeworkcore.analyzers.7.0.10.nupkg.sha512",
+    "C:\\Users\\rafae\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
+    "C:\\Users\\rafae\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
+    "C:\\Users\\rafae\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.5\\microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.7\\microsoft.entityframeworkcore.relational.6.0.7.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",

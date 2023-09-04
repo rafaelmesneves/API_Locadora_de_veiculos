@@ -1,11 +1,24 @@
-using System;
 
-namespace Api.Domain.Entities
+using System;
+using System.ComponentModel.DataAnnotations;
+
+namespace SuaApp.Domain.Entities
 {
-    public class CadastroFuncionarioEntity : BaseEntity
+    public class CadastroFuncionarioEntity
     {
-        public int IdFuncionario { get; set; }
-        public string Login { get; set; }
-        public string Senha { get; set; }
+        public int Id { get; set; }
+
+        [Required(ErrorMessage = "O campo Nome é obrigatório.")]
+        public string Nome { get; set; }
+
+        [Required(ErrorMessage = "O campo CPF é obrigatório.")]
+        [StringLength(11, ErrorMessage = "O campo CPF deve conter 11 caracteres.")]
+        public string CPF { get; set; }
+
+        [Required(ErrorMessage = "O campo Data de Nascimento é obrigatório.")]
+        public DateTime DataNascimento { get; set; }
+
+        [Required(ErrorMessage = "O campo Cargo é obrigatório.")]
+        public string Cargo { get; set; }
     }
 }

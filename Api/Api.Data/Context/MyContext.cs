@@ -5,12 +5,9 @@ namespace Api.Data.Context
 {
     public class MyContext : DbContext
     {
-        // Certifique-se de adicionar as DbSet para as três entidades
-
         public DbSet<CadastroClienteEntity> CadastroClientes { get; set; }
         public DbSet<CadastroFuncionarioEntity> CadastroFuncionarios { get; set; }
         public DbSet<CadastroVeiculoEntity> CadastroVeiculos { get; set; }
-
 
         public MyContext(DbContextOptions<MyContext> options) : base(options)
         {
@@ -20,7 +17,7 @@ namespace Api.Data.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<UserEntity>(new UserMap().Configure);
+
         }
     }
 }

@@ -285,7 +285,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.10"
+          "Microsoft.EntityFrameworkCore": "7.0.5"
         },
         "compile": {
           "bin/placeholder/Domain.dll": {}
@@ -790,16 +790,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.413\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Downgrade de pacote detectado: Microsoft.EntityFrameworkCore de 7.0.10 para 7.0.5. Referencie o pacote diretamente do projeto para selecionar uma versão diferente. \r\n Data -> Domain -> Microsoft.EntityFrameworkCore (>= 7.0.10) \r\n Data -> Microsoft.EntityFrameworkCore (>= 7.0.5)",
-      "libraryId": "Microsoft.EntityFrameworkCore",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }

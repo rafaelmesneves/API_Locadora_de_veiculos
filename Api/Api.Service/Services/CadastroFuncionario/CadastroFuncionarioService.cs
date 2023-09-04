@@ -1,37 +1,34 @@
-using Api.Domain.Entities;
-using Api.Domain.Interfaces.Services.CadastroFuncionario;
+// CadastroFuncionarioService.cs
 using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
+using SuaApp.Domain.Entities;
 
-namespace Api.Service.Services.CadastroFuncionario
+namespace SuaApp.Services
 {
-    public class CadastroFuncionarioService : ICadastroFuncionarioService
+    public class CadastroFuncionarioService
     {
-        // Implementação dos métodos da interface ICadastroFuncionarioService
-        public async Task<CadastroFuncionarioEntity> Get(Guid id)
+        private List<CadastroFuncionarioEntity> _funcionarios = new List<CadastroFuncionarioEntity>();
+
+        public IEnumerable<CadastroFuncionarioEntity> GetAll()
         {
-            // Implementação do método Get usando CadastroFuncionarioEntity
+            return _funcionarios;
         }
 
-        public async Task<IEnumerable<CadastroFuncionarioEntity>> GetAll()
+        public CadastroFuncionarioEntity GetById(int id)
         {
-            // Implementação do método GetAll usando CadastroFuncionarioEntity
+            return _funcionarios.Find(funcionario => funcionario.Id == id);
         }
 
-        public async Task<CadastroFuncionarioEntity> Post(CadastroFuncionarioEntity funcionario)
+        public void Add(CadastroFuncionarioEntity funcionario)
         {
-            // Implementação do método Post usando CadastroFuncionarioEntity
+            funcionario.Id = _funcionarios.Count + 1;
+            _funcionarios.Add(funcionario);
         }
 
-        public async Task<CadastroFuncionarioEntity> Put(CadastroFuncionarioEntity funcionario)
+        public bool IsValid(CadastroFuncionarioEntity funcionario)
         {
-            // Implementação do método Put usando CadastroFuncionarioEntity
-        }
 
-        public async Task<bool> Delete(Guid id)
-        {
-            // Implementação do método Delete
+            return true;
         }
     }
 }

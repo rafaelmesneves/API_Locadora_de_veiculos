@@ -1,34 +1,41 @@
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.OpenApi.Models;
-using Api.Application.Services.CadastroCliente; // Corrija o namespace para apontar para o local correto
-using Api.Application.Services.CadastroFuncionario; // Corrija o namespace para apontar para o local correto
-using Api.Application.Services.CadastroVeiculo; // Corrija o namespace para apontar para o local correto
-using Api.Domain.Entities.CadastroCliente; // Corrija o namespace para apontar para o local correto
-using Api.Domain.Entities.CadastroFuncionario; // Corrija o namespace para apontar para o local correto
-using Api.Domain.Entities.CadastroVeiculo; // Corrija o namespace para apontar para o local correto
-using Api.Domain.Interfaces.Repositories; // Corrija o namespace para apontar para o local correto
+using Api.Domain.Interfaces.Services;
+using Api.CrossCutting.DependencyInjection;
+using Swashbuckle.AspNetCore.Swagger;
+using Api.Domain.Interfaces.Repositories;
+using Api.Data.Repositories;
 
-public void ConfigureServices(IServiceCollection services)
+internal partial class Program
 {
-    // ... Outras configurações
-
-    // Configurações para a tabela CadastroCliente
-    services.AddScoped<ICadastroClienteService, CadastroClienteService>();
-    services.AddScoped<IRepository<CadastroClienteEntity>, BaseRepository<CadastroClienteEntity>>();
-
-    // Configurações para a tabela CadastroFuncionario
-    services.AddScoped<ICadastroFuncionarioService, CadastroFuncionarioService>();
-    services.AddScoped<IRepository<CadastroFuncionarioEntity>, BaseRepository<CadastroFuncionarioEntity>>();
-
-    // Configurações para a tabela CadastroVeiculo
-    services.AddScoped<ICadastroVeiculoService, CadastroVeiculoService>();
-    services.AddScoped<IRepository<CadastroVeiculoEntity>, BaseRepository<CadastroVeiculoEntity>>();
-
-    // Configuração do Swagger (opcional)
-    services.AddSwaggerGen(c =>
+    private static void Main(string[] args)
     {
-        c.SwaggerDoc("v1", new OpenApiInfo { Title = "API Locadora de Veículos", Version = "v1" });
-    });
+    }
 
-    // ... Outras configurações
+    private static void ConfigureServices(IServiceCollection services)
+    {
+        _ = services.AddScoped<Api.Service.Services.CadastroClienteService, Api.Service.Services.CadastroClienteService>();
+        services.AddScoped<IRepository<Api.Domain.Entities.CadastroClienteEntity>, Repository<Api.Domain.Entities.CadastroClienteEntity>>();
+
+        services.AddScoped<ICadastroClienteService, CadastroClienteService>();
+        services.AddScoped<IRepository<CadastroClienteEntity>, Repository<CadastroClienteEntity>>();
+
+        services.AddScoped<ICadastroFuncionarioService, CadastroFuncionarioService>();
+        services.AddScoped<IRepository<CadastroFuncionarioEntity>, Repository<CadastroFuncionarioEntity>>();
+
+        services.AddScoped<ICadastroVeiculoService, CadastroVeiculoService>();
+        services.AddScoped<IRepository<CadastroVeiculoEntity>, Repository<CadastroVeiculoEntity>>();
+
+        services.AddSwaggerGen(c =>
+        {
+            c.SwaggerDoc("v1", new OpenApiInfo { Title = "API Locadora de Veículos", Version = "v1" });
+        });
+
+
+    }
+}
+
+internal class OpenApiInfo : Info
+{
+    public string Title { get; set; }
+    public string Version { get; set; }
 }
